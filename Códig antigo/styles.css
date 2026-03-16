@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    width: 350px;
+}
+
+#palavra {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#forca {
+    position: relative;
+    width: 120px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.base, .poste, .haste, .corda {
+    position: absolute;
+    background: #333;
+}
+
+.base {
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    left: 0px;
+}
+
+.poste {
+    width: 10px;
+    height: 160px;
+    left: 20px;
+    bottom: 0;
+}
+
+.haste {
+    width: 70px;
+    height: 10px;
+    left: 20px;
+    top: 0;
+}
+
+.corda {
+    width: 2px;
+    height: 30px;
+    left: 90px;
+    top: 10px;
+    background: #999;
+}
+
+.cabeca {
+    top: 40px;
+    left: 75px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.tronco {
+    top: 70px;
+    left: 89px;
+    width: 2px;
+    height: 40px;
+}
+
+.braco-esq {
+    top: 75px;
+    left: 89px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-30deg);
+    transform-origin: left;
+}
+
+.braco-dir {
+    top: 75px;
+    left: 71px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(30deg);
+    transform-origin: right;
+}
+
+.perna-esq {
+    top: 110px;
+    left: 89px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+
+.perna-dir {
+    top: 110px;
+    left: 71px;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-45deg);
+    transform-origin: right;
+}
